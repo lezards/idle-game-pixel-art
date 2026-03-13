@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: var(--font-pixel), monospace;
+}
+
+@layer utilities {
+  .pixel-borders {
+    box-shadow: 
+      inset 2px 2px 0px 0px rgba(255,255,255,0.2),
+      inset -2px -2px 0px 0px rgba(0,0,0,0.5),
+      0 0 0 2px #000;
+  }
+  
+  .pixel-borders-pressed {
+    box-shadow: 
+      inset 2px 2px 0px 0px rgba(0,0,0,0.5),
+      inset -2px -2px 0px 0px rgba(255,255,255,0.2),
+      0 0 0 2px #000;
+  }
+
+  .pixel-panel {
+    box-shadow: 
+      inset 4px 4px 0px 0px rgba(255,255,255,0.1),
+      inset -4px -4px 0px 0px rgba(0,0,0,0.4),
+      0 0 0 4px #000;
+  }
+}
